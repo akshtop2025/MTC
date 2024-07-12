@@ -15,7 +15,7 @@ ul {
 
 @font-face {
   font-family: 'myfont';
-  src: url('/Gotham-font-family/Gotham/Gotham-Book.otf');
+  src: url('../font/Arima/static/Arima-Regular.ttf');
 }
 
 /* @font-face {
@@ -35,10 +35,22 @@ font-weight: bold;
 }
 
 /* border */
-.border-local {
-  border: 2px solid #0F3B66 !important;
+.border-local{
+  border: 1px solid #0F3B66 !important;
 }
 
+.text-under-line {
+  opacity: 1 !important;
+  border-width: 5px;
+  color: #B1291A;
+  /* width: 16%; */
+  margin-top: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* margin-left: 16px; */
+}
 .border-head{
   border-bottom: 4px solid #B1291A !important;
   width: fit-content !important;
@@ -62,6 +74,9 @@ font-weight: bold;
   background-color: #0F3B66 !important;
 
 }
+.back-1{
+  background-color: #F7E9E9 !important;
+}
 
 .color {
   color: #0F3B66 !important;
@@ -75,6 +90,9 @@ font-weight: bold;
 /* back-color */
 .back-color{
   background-color: #FEF0F0 !important;
+}
+.form-back{
+  background-color: #F5F5F5 !important;
 }
 /* back-color */
 
@@ -114,16 +132,6 @@ font-weight: bold;
   margin-bottom: 25px;
 }
 
-
-.logo ul li {
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.list ul li {
-  display: inline-block;
-
-}
 
 .links ul li a {
   font-size: 15px;
@@ -882,6 +890,58 @@ button:active {
 }
 
 
+.footer_txt h2 {
+  line-height: 40px;
+  color: #B1291A;
+  font-family: myfont;
+  font-weight: bold;
+
+
+}
+
+.footer_txt h3 {
+  line-height: 28px;
+  color: #0F3B66;
+  font-family: myfont;
+  font-weight: bold;
+
+
+}
+
+
+.footer_txt-2 h3 {
+  line-height: 28px;
+  color: #0F3B66;
+  font-family: myfont;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.footer_txt-1 h2 {
+  line-height: 40px;
+  color: #B1291A;
+  font-family: myfont;
+  font-weight: bold;
+
+
+}
+
+.footer_txt-2 h2 {
+  line-height: 40px;
+  color: #B1291A;
+  font-family: myfont;
+  font-weight: bold;
+}
+
+.footer_txt-2 {
+  display: block;
+  line-height: 23px;
+  color: #0F3B66;
+  /* font-size: 20px; */
+  font-family: myfont;
+}
 
 .footer_txt a {
   line-height: 15px;
@@ -892,9 +952,9 @@ button:active {
   display: inline-block;
 }
 
-.footer_txt-2 {
+/* .footer_txt-2 {
   margin-top: 15px;
-}
+} */
 
 .footer_txt-2 a {
   color: #0F3B66;
@@ -1101,9 +1161,6 @@ form {
   padding: 20px;
 }
 
-.map-sec iframe {
-  margin-bottom: 80px;
-}
 
 
 /* Clear floats after the columns */
@@ -1127,7 +1184,9 @@ input[type=submit] {
 /* ........... About Us section ......... */
 
 
-
+.more-content {
+  display: none;
+}
 
 
 .sec-main-2 h1 {
@@ -1473,13 +1532,31 @@ input[type=submit] {
 
 
 /* ........... About Us section ......... */
-* {
-  box-sizing: border-box;
+.tab button {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+  margin-right: 5px;
 }
 
-body {
-  font-family: Verdana, sans-serif;
+.tab button.active {
+  background-color: #0F3B66;
+  /* Change this color to whatever you prefer */
+  color: white;
 }
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+
 
 .mySlides {
   display: none;
@@ -2237,8 +2314,6 @@ body {
   text-align: center;
   /* margin-top: -26px; */
   margin-bottom: 9px;
-  text-decoration: underline;
-  text-decoration-color: #B1291A;
 }
 
 .text-center p {
@@ -2527,109 +2602,6 @@ body {
 
 
 
-/* .....toggle buttton....... */
-
-
-/* nav {
-  position: absolute;
-  top: 20%;
-  right: 10px;
-  width: 80px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: grab;
-}
-
-nav .nav-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(-45deg);
-}
-
-.nav-content .toggle-btn,
-.nav-content span a {
-  height: 60px;
-  width: 60px;
-  background: #a32924;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.nav-content .toggle-btn {
-  font-size: 35px;
-  color: #0F3B66;
-  z-index: 100;
-  cursor: pointer;
-  transform: rotate(-225deg);
-  transition: all 0.6s ease;
-}
-
-nav.open .toggle-btn {
-  transform: rotate(50deg);
-
-}
-
-nav .toggle-btn {
-  transform: rotate(250deg);
-
-
-}
-
-.nav-content span {
-  position: absolute;
-  transition: all 0.6s ease;
-  opacity: 0;
-}
-
-nav.open .nav-content span {
-  transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
-  opacity: 1;
-}
-
-.nav-content span a {
-  text-decoration: none;
-  transform: rotate(45deg);
-}
-
-.nav-content span a i {
-  font-size: 24px;
-  color: #ffffff;
-  transform: rotate(calc(var(--i) * (360deg/ -8)));
-  transition: 0.2s;
-}
-
-.nav-content span a:hover i {
-  opacity: 1;
-}
-
-.toggle-btn i {
-  text-align: center;
-  font-size: 25px;
-  color: white;
-}
-
- */
-
-
-/* .float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 20px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-} */
 
 .footer_txt {
   font-size: 12px;
@@ -2642,31 +2614,7 @@ nav.open .nav-content span {
 
 /* .....toggle buttton....... */
 
-.slider-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50%;
-  /* width: 80%;  */
-  /* margin-top: 50px; */
-  overflow: hidden;
-  /* background: rgb(255, 255, 255); */
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.4px);
-  -webkit-backdrop-filter: blur(7.4px);
-  /* border: 1px solid rgba(255, 255, 255, 0.4); */
-  background-color: #000;
-}
 
-.slider-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  animation: scrolling 20s linear infinite;
-
-}
 
 .sec-slidder {
   background-color: #000;
@@ -2683,11 +2631,11 @@ nav.open .nav-content span {
   }
 }
 
-.slider-items img {
+/* .slider-items img {
   width: 27%;
   margin: 20px;
 
-}
+} */
 
 
 
@@ -2702,86 +2650,6 @@ nav.open .nav-content span {
   padding: 0 70px;
 }
 
-.slick-initialized .slick-slide {
-  background-color: #b32532;
-  color: #FFF;
-  height: 200px;
-  margin: 0 15px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-.slick-next,
-.slick-prev {
-  z-index: 5;
-}
-
-.slick-next {
-  right: 15px;
-}
-
-.slick-prev {
-  left: 15px;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  color: #000;
-  font-size: 26px;
-}
-.tab button {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 10px;
-  transition: background-color 0.3s;
-  margin-right: 5px;
-}
-
-.tab button.active {
-  background-color: #0F3B66;
-  /* Change this color to whatever you prefer */
-  color: white;
-}
-
-.content {
-  display: none;
-}
-
-.content.active {
-  display: block;
-}
-
-/* .tablinks:active{
-  color: white;
-  background-color: #0F3B66;
-}
-.tablinks:focus{
-  color: white;
-  background-color: #0F3B66;
-}
-.tablinks-1:active{
-  color: white;
-  background-color: #0F3B66;
-}
-.tablinks-1:focus{
-  color: white;
-  background-color: #0F3B66;
-} */
-/* .tablinks-1 {
-  background-color: white;
-  padding: 15px 35px;
-  border: none;
-  margin: 7px;
-  font-family: myfont;
-  font-weight: bold;
-  color: #0F3B66;
-  border-radius: 10px;
-  border: 0.5px solid #0F3B66;
-} */
 
 /* font-size list*/
 .font-size-1rem {
@@ -2885,17 +2753,6 @@ p{
 .button:hover{
   background: #265DF2;
 }
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .card-image {
   width: 200px;
@@ -2915,14 +2772,14 @@ p{
   margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;
   }
   .swiper-navBtn{
     display: none;
   }
-}
+} */
 
 /* our expert */
 
@@ -2964,8 +2821,60 @@ p{
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* p{
-    font-size: 19px;
-  } */
+@media (min-width: 1400px) {  }
+
+
+
+
+
+
+.img-hover-zoom {
+  /* height: 300px; */
+  /* [1.1] Set it as per your need */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+
+.testimonial-carousel .color-text {
+  color: #333;
+}
+.testimonial-carousel .star-color {
+  color: #ffd700;
+}
+.owl-nav button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-nav button.owl-prev {
+  left: -40px; /* Adjust position as needed */
+}
+.owl-nav button.owl-next {
+  right: -40px; /* Adjust position as needed */
+}
+.owl-dot {
+display: inline-block;
+width: 10px;
+height: 10px;
+margin: 5px;
+background-color: #ddd;
+border-radius: 50%;
+}
+.owl-dot.active {
+background-color: #333;
 }

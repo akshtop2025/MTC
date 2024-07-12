@@ -1,10 +1,10 @@
-window.onload = function () {
-  document.getElementById('popupOverlay').style.display = 'block';
-}
+// window.onload = function () {
+//   document.getElementById('popupOverlay').style.display = 'block';
+// }
 
-function closePopup() {
-  document.getElementById('popupOverlay').style.display = 'none';
-}
+// function closePopup() {
+//   document.getElementById('popupOverlay').style.display = 'none';
+// }
 
 
 /* .........toggle button...... */
@@ -34,30 +34,42 @@ function closePopup() {
 
 
 
-const button = document.querySelector(".button");
-button.addEventListener("click", (e) => {
-  e.preventDefault;
-  button.classList.add("animate");
-  setTimeout(() => {
-    button.classList.remove("animate");
-  }, 600);
-});
+// const button = document.querySelector(".button");
+// button.addEventListener("click", (e) => {
+//   e.preventDefault;
+//   button.classList.add("animate");
+//   setTimeout(() => {
+//     button.classList.remove("animate");
+//   }, 600);
+// });
 
 // read more
 
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+// function myFunction() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
+function toggleContent() {
+  var moreContent = document.getElementById("more-content");
+  var btnText = document.getElementById("read-more-btn");
+
+  if (moreContent.style.display === "none") {
+      moreContent.style.display = "block";
+      btnText.innerHTML = "Read Less";
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+      moreContent.style.display = "none";
+      btnText.innerHTML = "Read More";
   }
 }
 
@@ -69,37 +81,61 @@ function myFunction() {
 
 
 // filter
+// Function to handle tab switching
 function showContent(evt, contentId) {
   var i, tabcontent, tablinks;
-  
+
+  // Get all elements with class="content" and hide them
   tabcontent = document.getElementsByClassName("content");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+      tabcontent[i].style.display = "none";
   }
-  
+
+  // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  
-  document.getElementById(contentId).className += " active";
+
+  // Show the current tab and add an "active" class to the button that opened the tab
+  document.getElementById(contentId).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Initialize the first tab as active
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.tablinks').click(); // Trigger a click on the first tab to show it
+});
+
 // filter
 
 
 // profile
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  centeredSlides: true,
+  slidesPerView: 3,           // Show 3 slides at a time
+  slidesToScroll: 1,          // Scroll 1 slide at a time
+  spaceBetween: 20,           // Space between slides
   autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
+      delay: 3000,            // Delay between slides in ms
+      disableOnInteraction: false, // Continue autoplay after user interactions
   },
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  breakpoints: {
+      640: {
+          slidesPerView: 1,
+          slidesToScroll: 1,
+      },
+      768: {
+          slidesPerView: 2,
+          slidesToScroll: 1,
+      },
+      1024: {
+          slidesPerView: 3,
+          slidesToScroll: 1,
+      },
   },
 });
 // profile
