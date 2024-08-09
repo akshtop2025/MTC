@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dr.Anand Patel</title>
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/FavIcon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="top-menu ">
+      <div class="container">
+        <div class="search-bar" id="searchBarDisplay">
+          <div class="row align-items-center justify-content-between">
+
+            <div class="col-auto">
+
+              <div class="search-bar-logo d-block d-lg-none">
+                <div class="col-12">
+                  <a href="../index.html">
+                    <img src="../assets/img/mmm.jpg" alt="logo" class="mt-2">
+                  </a>
+
+                  <button class="btn bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" style="position: absolute;right: 24px; top: 27px;"><i
+                      class="fa-solid fa-bars color" aria-hidden="true"></i></button>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                      <img src="../assets/img/mmm.jpg" alt="logo" srcset="" class="prinix-logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link color" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item setActive" data-id="1" id="parentCat_1">
+                        <a class="nav-link dropdown-toggle color" aria-current="page"
+                          href="javascript:void(0);">COURSES</a>
+                        <ul class="dropdown-menu" id="1">
+                          <li>
+                            <h6><a href="../index.html" class="color">FOGSI Recognized Courses</a></h6>
+                          </li>
+                          <li><a class="dropdown-item color"
+                              href="../Course/FOGSI-certifiedInfertilityCoursebyMTC.html">Advanced Infertility</a></li>
+                          <li><a class="dropdown-item color"
+                              href="../Course/FOGSI-certifiedSonographyCoursebyMTC.html">Advanced Sonography</a></li>
+                          <li><a class="dropdown-item color"
+                              href="../Course/FOGSI-certifiedLaparoscopyCoursebyMTC.html">Advanced Laparoscopy</a></li>
+                          <li>
+                            <h6><a href="./index.html" class="color">Fellowship / Hands-on Training Courses</a></h6>
+                          </li>
+                          <li><a class="dropdown-item color"
+                              href="../Course/LearnwiththeLatestEquipmenti0nouradvancedIVFLabbyMTC.html">Advanced
+                              Infertility</a></li>
+                          <li><a class="dropdown-item color" href="../Course/FellowshipAdvancedsonography.html">Advanced
+                              Sonography</a></li>
+                          <li><a class="dropdown-item color"
+                              href="../Course/Fellowship(Basic)-3Months-Observe&Perform.html">Advanced Laparoscopy</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link color" aria-current="page" href="../About.html">ABOUT</a>
+
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link color" aria-current="page" href="../Contact.html">CONTACT</a>
+
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-bar d-none d-lg-block">
+          <div class="row justify-content-center">
+            <div class="col">
+              <nav class="navbar mx-auto navbar-expand-lg justify-content-between">
+
+                <a href="../index.html">
+                  <img src="../assets/img/mmm.jpg" alt="logo" loading="lazy">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="../index.html">HOME</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown  ">
+                      <a class="nav-link mx-2" aria-current="page" .="" role="button" aria-expanded="false"
+                        href="../About.html">ABOUT US</a>
+
+                    </li>
+                    <li class="nav-item dropdown  ">
+                      <a class="nav-link mx-2" aria-current="page" .="" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" href="javascript:void(0);">COURSES</a>
+                      <div class="sub-menu" style="width: max-content;">
+                        <ul class="sum-menu-first" id="2">
+                          <li>
+                            <ul class="sum-menu-sesund list-unstyled">
+                              <li>
+                                <h6><a href="../index.html" class="color text-decoration-none ">FOGSI Recognized
+                                    Courses</a>
+                                </h6>
+                              </li>
+                              <li><a class="sub-item color text-decoration-none fs-6"
+                                  href="../Course/FOGSI-certifiedInfertilityCoursebyMTC.html">Advanced Infertility</a>
+                              </li>
+                              <li><a class="sub-item color text-decoration-none fs-6"
+                                  href="../Course/FOGSI-certifiedSonographyCoursebyMTC.html">Advanced Sonography</a>
+                              </li>
+                              <li><a class="sub-item color text-decoration-none fs-6"
+                                  href="../Course/FOGSI-certifiedLaparoscopyCoursebyMTC.html">Advanced Laparoscopy</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="sum-menu-sesund list-unstyled">
+                              <li>
+                                <h6><a href="../index.html" class="text-decoration-none color">Fellowship / Hands-on
+                                    Training Courses</a></h6>
+                              </li>
+                              <li><a class="sub-item text-decoration-none color fs-6"
+                                  href="../Course/LearnwiththeLatestEquipmenti0nouradvancedIVFLabbyMTC.html">Advanced
+                                  Infertility</a>
+                              </li>
+                              <li><a class="sub-item text-decoration-none color fs-6"
+                                  href="../Course/FellowshipAdvancedsonography.html">Advanced Sonography</a>
+                              </li>
+                              <li><a class="sub-item text-decoration-none color fs-6"
+                                  href="../Course/Fellowship(Basic)-3Months-Observe&Perform.html">Advanced
+                                  Laparoscopy</a>
+                              </li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown  dining">
+                      <a class="nav-link mx-2" aria-current="page" .="" role="button" aria-expanded="false"
+                        href="../Contact.html">CONTACT US</a>
+
+                    </li>
+                    <li class="nav-item dropdown  dining">
+                      <button class="btn text-white text-uppercase" type="submit"
+                        style="background-color: #0F3B66;">Enroll now</button>
+
+                    </li>
+
+                  </ul>
+                </div>
+
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="overflow-hidden mx-auto text-center position-relative my-3">
+    <div class="container">
+
+
+      <img class="img-fluid" src="../assets/img/Dr.AnandPatelprofilepagebanner.jpg" alt="dr img" loading="lazy">
+    </div>
+  </section>
+
+  <section class="anand-patel-sec my-3">
+    <div class="container">
+      <div class="row  mx-auto">
+        <div class="col-lg-3 col-md-5 col-12 text-lg-start text-md-start text-center">
+          <img class="img-fluid" src="../assets/img/Dr.AnandPatel.jpg" alt="main img" loading="lazy">
+        </div>
+        <div class="col-lg-6 col-md-7 col-12 mt-lg-0 mt-3 align-content-start">
+          <div class="row">
+            <h2 class="font-size-25 color-1">Dr. Anand Patel</h2>
+            <!-- <h4 class="font-size-24 color">(M.B.B.S, M.D, D.G.O)</h4> -->
+            <p class="font-size-17 color text-capitalize">senior consultant gynecologist , Fertility specialist  and <br> advanced Gynec laparoscopic surgeon</p>
+            <h2 class="color-1">Social :</h2>
+            <div class=" justify-content-evenly">
+              <a href="https://www.facebook.com/dranandpatel.gynecologist" class="text-decoration-none">
+                <span class="back px-2 py-2 rounded mx-2"><i class="fa-brands fa-facebook text-white pt-3"></i></span>
+              </a>
+              <a href="https://www.youtube.com/@dr.anandpatel" class="text-decoration-none">
+                <span class="back px-2 py-2 rounded mx-2"><i class="fa-brands fa-youtube text-white pt-3"></i></span>
+              </a>
+              <a href="https://www.linkedin.com/in/dr-anand-patel-73033525b/" class="text-decoration-none">
+                <span class="back px-2 py-2 rounded mx-2"><i class="fa-brands fa-linkedin text-white pt-3"></i></span>
+              </a>
+
+              <a href="https://www.instagram.com/dr_anandpatel?igsh=aWprdTZnZDgwejN0" class="text-decoration-none">
+                <span class="back px-2 py-2 rounded mx-2"><i class="fa-brands fa-instagram text-white pt-3"></i></span>
+              </a>
+              <a href="" class="text-decoration-none">
+                <span class="back px-2 py-2 rounded mx-2"><i class="fa-solid fa-earth-americas text-white pt-3"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-3">
+
+    <div class="container">
+      <div class="row">
+        <h2 class="color-1 font-size-25">Profile :</h2>
+        <p class="font-size-17">Dr. Anand Patel is a Consultant Gynaecologist, ART clinician, and Advanced Laparoscopic Surgeon with over 20 years of experience. He holds an M.D., D.G.O., and a Diploma in Advanced Gynec Endoscopy from CICE, France, as well as a Diploma in Sonography. Since 2007, he has been dedicated to providing comprehensive care as a consultant Gynec endoscopic surgeon, sonologist, and high-risk obstetrician.
+        </p>
+        <p class="font-size-17">Currently, he serves as the Director at Motherhood Women's & Child Care Hospital and Midas Touch Cosmetic Centre. At Motherhood, they have established the first IVF hospital in Sola, Ahmedabad, with a vision to offer qualitative services through continuous research and market study. Their team comprises over 20 highly skilled specialists in IVF, gynecology, high-risk pregnancy, genetics, Gynec endoscopy/3D laparoscopy, and 3D/4D sonography.</p>
+        <p class="font-size-17">Their achievements include treating over 85,000 satisfied patients, with more than 14,000 successful IVF cases. They have also established 25 OPD sub-centers across Gujarat to extend their reach. In addition to his clinical practice, Dr. Patel actively supports women's and children's health awareness programs and conducts medical camps in underprivileged areas.
+        </p>
+        <p class="font-size-17">The hospital is NABH Certified and dedicated to delivering specialized care for women and children, focusing on IVF, Gynec endoscopic procedures, high-risk pregnancies, and NICU/PICU services. Their mission is to provide exceptional care with the highest professional quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-1 font-size-25">Education and Training :</h2>
+          <ul>
+            <li>
+              <p class="font-size-17">Awarded Diploma in advanced Gynecological endoscopy surgery from CICE, France, in
+                2014</p>
+            </li>
+            <li>
+              <p class="font-size-17">Accredited for successful completion of 2D/3D in Obstetrics & Gynecology Sonography education program in July 2013 from Chennai.
+              </p>
+            </li>
+            <li>
+              <p class="font-size-17">Certified & awarded for successful completion of 2D/3D in obstetrics & gynecology
+                sonography education program in July 2013 from Chennai. </p>
+            </li>
+            <li>
+              <p class="font-size-17">Certified for fetal echocardiography education program held by Medanta Medicity,
+                Gurgaon, in October 2013. </p>
+            </li>
+            <li>
+              <p class="font-size-17">Certified for the scientific program of the international educational course 2013,
+                Bangalore. </p>
+            </li>
+            <li>
+              <p class="font-size-17">Received a postgraduate diploma in sonography from the global Open University in
+                2006 and completed training in color Doppler - obs & Gynec, 2011. </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-1 p-0 font-size-25">Experience :</h2>
+          <ul>
+            <li class="mb-2">
+              <p class="font-size-17">Consultant Gynaecologist, Endoscopic surgeon, Sonologist and IVF Specialist, and High-risk obstetrician since 2007. Gynecologist and Obstetrician, Endoscopic Surgeon, and laparoscopic surgeon at Trimurti Hospital, Idar.
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Director at NABH-certified Motherhood Women’s & Child Care Hospital since 2012.
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Director at Midas Touch Cosmetic Centre since 2016.
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Director at Motherhood Training Center – A Center For Excellence offering FOGSI-recognized Advanced Infertility | Gynec Endoscopy | Advanced Ultrasound courses. The center also features customized fellowship hands-on training programs which are great for already practicing Gynecologists to gain insight into the latest technology. 
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Through the courses at the Motherhood Training Center, Dr. Anand Patel has trained fellow Gaynecologists from Gujarat, Karnataka, Andhra Pradesh, Malaysia and many more. 
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Dr. Anand Patel has also established two branches of Motherhood IVF centers in Vadaj Rajkot  Himmatnagar and Gandhinagar. 
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Team of over 20 highly skilled super specialist consultants with vast experience in Infertility, High-risk pregnancy, 4K 3D Laparoscopy/Endoscopy, and 3D/4D HD Live Sonography. 
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Director of Medistar Multispecialty Hospital, Trimurti Avenue, National Highway 8, Himmatnagar. It is a multispeciality hospital with a 125-bed trauma center providing the best quality healthcare services. 
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Director of Money Plant Finmart, Ahmedabad. A leading financial advisory firm offering financial solutions across different verticals with rich exposure in the financial investments space and portfolio advisory services from a modest and small beginning.
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Established 2nd branch of Motherhood Women’s and Child Care Hospital- Motherhood IVF Center at Vadaj, Ahmedabad, and the third branch named Satnam Motherhood IVF Center at Rajkot.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="my-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-1 p-0 font-size-25">Professional achievements</h2>
+          <ul>
+            <li class="mb-2">
+              <p class="font-size-17">For his expertise on the subject, he has also been invited as a Faculty in various prestigious conferences, such as:
+              </p>
+              <ul>
+                <li><p class="font-size-17">Faculty in IAGE PRIDE III-2020
+                </p></li>
+                <li><p class="font-size-17">Faculty in IAGE ENDO ATM, Ahmedabad - 2022
+                </p></li>
+                <li><p class="font-size-17">Faculty in Logycon, AMA-2023 
+
+                </p></li>
+                <li><p class="font-size-17">Faculty in Fertivision, Delhi-2023
+
+                </p></li>
+              </ul>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Invited As a faculty in National IAGE workshop and conferences for
+                urogynaecology endo atm 2024
+                </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Participated as a faculty in 46th Sogog (HMT)
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Honored  to be SOGOG (Society of Obstetricians & Gynaecologists of Ghana) faculty - 2023 held at Statue of Unity 
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Honored  to be SOGOG (Society of Obstetricians & Gynaecologists of Ghana) faculty - 2024 held at Himmatnagar
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Motherhood Women's & Child Care Hospital is a pioneer in installing the first Image 15 Rubina 4K 3D Laparoscopy system in Ahmedabad, being only the 15th hospital in India to have such Technology.
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Honoured with the prestigious National ISAR RISING STAR Award for his contributions in the field of the New Era of Assisted Reproductive Technology at the National Conference ISAR 2023
+              </p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Honoured with the prestigious national ISAR Rising Star award for his contribution in the field of the new era of assisted reproductive technology at the national conference isar 2024, Bhubaneswar
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="my-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="color-1 p-0 font-size-25">Dr. Anand Patel's Extensive Profile</h2>
+          <ul>
+            <li class="mb-2">
+              <p class="font-size-17">Performed Micro TESE - a surgical procedure of extracting Sperm from Seminiferous
+                Tubules in 2023.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Speaker at ENDO ATM Conference 2022, where he shared views on Endometrioma and
+                ART.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Certified in an International workshop on Recent Advances in Gynecological
+                Endoscopy & Urogynecology in 2015.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Participated in the International Conference & Workshop in Fetal Neurosonography &
+                Echocardiography in 2015 in Delhi.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Enrolled as a lifetime member of Gynecological Endoscopists and the International
+                Society of Ultrasound in Obstetrics and Gynecology.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Attended the IAGE (Indian Association of Gynecological Endoscopists) Society
+                conference as a faculty member on Endometrioma and ART.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Participated as a delegate in an international conference on Ultrasonography in
+                Obstetrics, Gynecology & Fetal Medicine in 2013 by the FOGSI Imaging Science Committee.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Participated in the 2011 Annual Conference of IMA Gujarat state.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Attended the IAGE (Indian Association of Gynecological Endoscopists) Society
+                conference as a faculty member of Endometrioma and ART.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Participated as a delegate in the Live Surgical Workshop in Gynec Endoscopy in
+                2012 and attained National CME on Fetal Medicine.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">Dr. Anand Patel's dedication to providing social services is not unseen. He
+                organizes medical camps in slum areas to promote women's and children's health awareness programs
+                regularly. While it is safe to say he is a one-man army, that does not dismiss the fact that he has a
+                team of over 20 highly skilled super specialist consultants with vast experience in infertility,
+                high-risk pregnancy, 4K 3D laparoscopy/endoscopy, and 3D/4D HD live Sonography.</p>
+            </li>
+            <li class="mb-2">
+              <p class="font-size-17">While it is safe to say he is a one Man army, that does not dismiss the fact that he has a team of over 20 highly skilled super specialist consultants with vast experience in infertility, high-risk pregnancy, 4K 3D laparoscopy/endoscopy, and 3D/4D HD live Sonography. </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="Foot_bg back-color py-4">
+    <div class="container">
+        <div class="row justify">
+            <div class="col-12 col-md-3 col-lg-4">
+                <div class="Foter_text">
+                    <!-- <h4>Title Here</h4> -->
+                    <div class="logo">
+
+                        <ul class="p-0 text-start text-md-start mx-auto mx-lg-0 mx-md-0">
+                            <li> <a href="../index.html"><img src="../assets/img/MTC.svg" alt="logo"></a></li>
+
+                        </ul>
+
+                    </div>
+                    <p class="font-size-1rem text-lg-start text-md-start color text-start">Motherhood
+                        Training Center - A
+                        subsidiary of Motherhood
+                        Women’s &amp; Child Care Hospital, offers
+                        FOGSI-certified as
+                        well
+                        as fellowship (Hands-On) courses to practising
+                        Obstetricians
+                        and Gynecologists for industry expertise in the
+                        fields of
+                        Infertility, Sonography, Laparoscopy and
+                        Embryology.
+                    </p>
+                    <ul class="text-md-start text-lg-start text-start p-0">
+                        <li><a class="facebook rounded-1 text-md-start text-lg-start text-center"
+                                href="https://www.instagram.com/motherhoodtrainingcenter/"><i
+                                    class="fa-brands fa-instagram  text-white  font-size-2rem"></i></a></li>
+
+                        <li><a class="facebook rounded-1 text-md-start text-lg-start text-center"
+                                href="https://www.facebook.com/motherhoodtrainingcenter"><i
+                                    class="fa-brands fa-facebook  text-white font-size-2rem"></i></a>
+                        </li>
+                        <li><a class="facebook rounded-1 text-md-start text-lg-start text-center"
+                                href="https://www.linkedin.com/company/motherhood-training-center/"><i
+                                    class="fa-brands fa-linkedin-in  text-white font-size-2rem"></i></a></li>
+                                    <li><a class="facebook rounded-1 text-md-start text-lg-start text-center" href="https://www.youtube.com/@motherhoodtrainingcenter"><i
+                                      class="fa-brands fa-youtube  text-white font-size-2rem"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8 align-self-end">
+                <div class="Foter_last">
+                    <div class="row justify">
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <div class="footer_txt">
+                                <h4 class="text-md-start fw-bold text-lg-start text-start color-1">Our
+                                    Training</h4>
+                                <h6 class="text-md-start fw-bold text-lg-start color text-start">FOGSI
+                                    Recognized Courses</h6>
+                                <a class="d-block p-2 fs-6 text-md-start text-lg-start text-start color"
+                                    href="../Course/FOGSI-certifiedInfertilityCoursebyMTC.html">Advanced
+                                    Infertility</a>
+                                <a class="d-block p-2 fs-6 text-md-start text-lg-start text-start color"
+                                    href="../Course/FOGSI-certifiedSonographyCoursebyMTC.html">Advanced
+                                    Sonography</a>
+                                <a class="d-block p-2 fs-6 text-md-start text-lg-start text-start color"
+                                    href="../Course/FOGSI-certifiedLaparoscopyCoursebyMTC.html">Advanced
+                                    Laparoscopy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12  d-lg-flex d-md-flex  align-self-end col-md-4 text-center col-lg-6">
+                            <div class="footer_txt-2 col-lg-6 col-md-6 col-12 text-center ">
+                                <!-- <h2></h2> -->
+                                <h6 class="color fw-bold text-md-start text-lg-start text-start">Fellowship
+                                    / Hands-on Training
+                                    Courses</h6>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="../Course/LearnwiththeLatestEquipmenti0nouradvancedIVFLabbyMTC.html">Advanced
+                                    Infertility</a>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="../Course/FellowshipAdvancedsonography.html">Advanced
+                                    Sonography</a>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="../Course/Fellowship(Basic)-3Months-Observe&Perform.html">Advanced
+                                    Laparoscopy</a>
+                            </div>
+                            <div class="footer_txt-2 col-lg-6 col-md-6 col-12 ">
+                                <!-- <h2></h2> -->
+                                <h6 class="color fw-bold text-md-start text-lg-start text-start">Certified
+                                    Clinical ART &amp; Embryology
+                                    Course</h6>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="#">observationship</a>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="#">Fellowship
+                                    (Basic)</a>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="#">Fellowship
+                                    (Advanced)</a>
+                                <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                    href="#">Embryo Biopsy or PGT</a>
+
+                            </div>
+                        </div>
+                        <div class="col-12  col-md-3 col-lg-3">
+                            <div class="footer_txt-1 ">
+                                <h4 class="text-md-start fw-bold text-lg-start text-start color-1">Quick
+                                    Links</h4>
+                                <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                    href="../index.html">Home</a>
+                                <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                    href="../About.html">About Us</a>
+                                <!-- <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                    href="#">Courses</a> -->
+                                <!-- <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6" href="Photo gallary">Photo
+                                    gallary</a> -->
+                                <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                    href="../Contact.html">Contact us</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+  <div class="design-section">
+    <div class="container">
+      <div class="row ali justify">
+        <p class="col-lg-6 col-md-6 col-12 text-center text-md-start text-lg-start m-0">Copyright
+          2024. All Rights Reserved
+          <span>Motherhood Training
+            Center</span>
+        </p>
+        <p class="col-lg-6 col-md-6 col-12 text-center text-md-end text-lg-end m-0">Designed
+          and Devloped By <span><a href="https://fleek.media/">fleek.media</a></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="../assets/js/mainnew.js"></script>
+
+
+</body>
+
+</html>

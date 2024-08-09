@@ -30,120 +30,224 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/FavIcon.jpg" type="image/x-icon">
 </head>
 
 <body>
 
     <body>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
+        <header class="header">
 
-                    <div class="logo ">
-                        <a class="navbar-brand" href="index.html">
-                            <img class="img-fluid d-block" src="./assets/img/mmm.png" alt="logo">
-                        </a>
+            <div class="top-menu ">
+                <div class="container">
+                    <div class="search-bar" id="searchBarDisplay">
+                        <div class="row align-items-center justify-content-between">
+
+                            <div class="col-auto">
+
+                                <div class="search-bar-logo d-block d-lg-none">
+                                    <div class="col-12">
+                                        <a href="./index.html">
+                                            <img src="./assets/img/mmm.jpg" alt="logo" class="mt-2">
+                                        </a>
+
+                                        <button class="btn bg-light" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                            style="position: absolute;right: 24px; top: 27px;"><i
+                                                class="fa-solid fa-bars color" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                                <img src="./assets/img/mmm.jpg" alt="" srcset="" class="prinix-logo">
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link color" href="./index.html">Home</a>
+                                                </li>
+                                                <li class="nav-item setActive" data-id="1" id="parentCat_1">
+                                                    <a class="nav-link dropdown-toggle color" aria-current="page"
+                                                        href="javascript:void(0);">COURSES</a>
+                                                    <ul class="dropdown-menu" id="1">
+                                                        <li>
+                                                            <h6><a href="./index.html" class="color">FOGSI Recognized
+                                                                    Courses</a></h6>
+                                                        </li>
+                                                        <li><a class="dropdown-item color"
+                                                                href="./Course/FOGSI-certifiedInfertilityCoursebyMTC.html">Advanced
+                                                                Infertility</a></li>
+                                                        <li><a class="dropdown-item color"
+                                                                href="./Course/FOGSI-certifiedSonographyCoursebyMTC.html">Advanced
+                                                                Sonography</a></li>
+                                                        <li><a class="dropdown-item color"
+                                                                href="./Course/FOGSI-certifiedLaparoscopyCoursebyMTC.html">Advanced
+                                                                Laparoscopy</a></li>
+                                                        <li>
+                                                            <h6><a href="./index.html" class="color">Fellowship /
+                                                                    Hands-on Training Courses</a></h6>
+                                                        </li>
+                                                        <li><a class="dropdown-item color"
+                                                                href="./Course/LearnwiththeLatestEquipmenti0nouradvancedIVFLabbyMTC.html">Advanced
+                                                                Infertility</a></li>
+                                                        <li><a class="dropdown-item color"
+                                                                href="./Course/FellowshipAdvancedsonography.html">Advanced
+                                                                Sonography</a></li>
+                                                        <li><a class="dropdown-item color"
+                                                                href="./Course/Fellowship(Basic)-3Months-Observe&Perform.html">Advanced
+                                                                Laparoscopy</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item ">
+                                                    <a class="nav-link color" aria-current="page"
+                                                        href="./About.html">ABOUT</a>
+
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link color" aria-current="page"
+                                                        href="./Contact.html">CONTACT</a>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto col-lg-10 justify-content-end  mb-2 mb-lg-0">
-                            <li class="nav-item px-2">
-                                <a class="nav-link color fs-6 fw-bold text-uppercase" aria-current="page"
-                                    href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link color fs-6 fw-bold " href="About.html">ABOUT US</a>
-                            </li>
-                            <li class="nav-item px-2 dropdown">
-                                <a class="nav-link color fs-6 fw-bold  dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    COURSES
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item fw-semibold color " href="course1.html">1. Advanced
-                                            Infertility</a>
-                                    </li>
-                                    <li><a class="dropdown-item fw-semibold color " href="#">2. Advanced
-                                            Sonography</a>
-                                    </li>
-                                    <li><a class="dropdown-item fw-semibold color " href="#">3. Advanced
-                                            Laparoscopy</a>
-                                    </li>
-                                    <li><a class="dropdown-item fw-semibold color " href="#">4. Certified Clinical
-                                            ART &
-                                            <br> Embryology
-                                            Course</a></li>
-                                    <!-- <li>
-                          <hr class="dropdown-divider">
-                        </li> -->
-                                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                                </ul>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link color fs-6 fw-bold " href="#">GALLARY</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link color fs-6 fw-bold  text-uppercase" href="Contact.html">CONTACT us</a>
-                            </li>
 
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <button class="btn text-white text-uppercase" type="submit"
-                                style="background-color: #0F3B66;">Enroll
-                                now</button>
-                        </form>
+                    <div class="menu-bar d-none d-lg-block">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <nav class="navbar mx-auto navbar-expand-lg justify-content-between">
+
+                                    <a href="./index.html">
+                                        <img src="./assets/img/mmm.jpg" alt="logo" loading="lazy">
+                                    </a>
+
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                                            <li class="nav-item">
+                                                <a class="nav-link mx-2" href="./index.html">HOME</a>
+                                            </li>
+
+
+                                            <li class="nav-item dropdown  ">
+                                                <a class="nav-link mx-2" aria-current="page" .="" role="button"
+                                                    aria-expanded="false" href="./About.html">ABOUT US</a>
+
+                                            </li>
+                                            <li class="nav-item dropdown  ">
+                                                <a class="nav-link mx-2" aria-current="page" .="" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    href="javascript:void(0);">COURSES</a>
+                                                <div class="sub-menu" style="width: max-content;">
+                                                    <ul class="sum-menu-first" id="2">
+                                                        <li>
+                                                            <ul class="sum-menu-sesund list-unstyled">
+                                                                <li>
+                                                                    <h6><a href="./index.html"
+                                                                            class="color text-decoration-none ">FOGSI
+                                                                            Recognized Courses</a>
+                                                                    </h6>
+                                                                </li>
+                                                                <li><a class="sub-item color text-decoration-none fs-6"
+                                                                        href="./Course/FOGSI-certifiedInfertilityCoursebyMTC.html">Advanced
+                                                                        Infertility</a>
+                                                                </li>
+                                                                <li><a class="sub-item color text-decoration-none fs-6"
+                                                                        href="./Course/FOGSI-certifiedSonographyCoursebyMTC.html">Advanced
+                                                                        Sonography</a>
+                                                                </li>
+                                                                <li><a class="sub-item color text-decoration-none fs-6"
+                                                                        href="./Course/FOGSI-certifiedLaparoscopyCoursebyMTC.html">Advanced
+                                                                        Laparoscopy</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sum-menu-sesund list-unstyled">
+                                                                <li>
+                                                                    <h6><a href="./index.html"
+                                                                            class="text-decoration-none color">Fellowship
+                                                                            / Hands-on Training Courses</a></h6>
+                                                                </li>
+                                                                <li><a class="sub-item text-decoration-none color fs-6"
+                                                                        href="./Course/LearnwiththeLatestEquipmenti0nouradvancedIVFLabbyMTC.html">Advanced
+                                                                        Infertility</a>
+                                                                </li>
+                                                                <li><a class="sub-item text-decoration-none color fs-6"
+                                                                        href="./Course/FellowshipAdvancedsonography.html">Advanced
+                                                                        Sonography</a>
+                                                                </li>
+                                                                <li><a class="sub-item text-decoration-none color fs-6"
+                                                                        href="./Course/Fellowship(Basic)-3Months-Observe&Perform.html">Advanced
+                                                                        Laparoscopy</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown  dining">
+                                                <a class="nav-link mx-2" aria-current="page" .="" role="button"
+                                                    aria-expanded="false" href="./Contact.html">CONTACT US</a>
+
+                                            </li>
+                                            <li class="nav-item dropdown  dining">
+                                                <button class="btn text-white text-uppercase" type="submit"
+                                                    style="background-color: #0F3B66;">Enroll now</button>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </header>
 
-        </div>
-        <section class="overflow-hidden mx-auto text-center position-relative">
+        <section class="overflow-hidden mx-auto text-center">
 
-            <img class="img-fluid " src="./assets/img/aboutmainimg.png" alt>
-            
+            <img class="img-fluid " src="./assets/img/AboutUs1263X213.jpg" alt="main-img">
+
         </section>
 
-        <section class="about-us-sec py-3">
+        <section class="about-us-sec my-3">
             <div class="container">
                 <div class="col-12">
-                    <h1 class="text-center mx-auto mb-3 border-head color">About
-                        Us</h1>
+                    <h2 class="text-center mx-auto border-head color font-size-25 my-3 p-0">About
+                        Us</h2>
                 </div>
-                <div class="row mx-auto align justify">
+                <div class="row mx-auto align justify-content-between flex-lg-row flex-md-row flex-column-reverse ">
 
                     <div class="col-12 col-md-6 col-lg-6">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it
-                            to make a type specimen book. It has
-                            survived not only five centuries, but also the
-                            leap into electronic typesetting,
-                            remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop
-                            publishing software like Aldus PageMaker
-                            including versions of Lorem Ipsum
+                        <p class="font-size-17">At Motherhood Training Center, we offer a unique educational experience by facilitating hands-on training opportunities for young eminent doctors through Motherhood Women’s and Child Care Hospital. This Hands-on exposure ensures that participants gain valuable insights and practical skills, enhancing their competence in managing diverse aspects of women's health.</p>
+                        <p class="font-size-17">Moreover, our commitment to fostering professional growth is complemented by the affordability of our courses, making quality education accessible to a wider spectrum of medical professionals.</p>
+                        <p class="font-size-17">Through our concerted efforts, Motherhood Training Center stands as a guiding source for aspiring Gynaecologists and Obstetricians, propelling them towards a fulfilling and impactful career in women's healthcare.
                         </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it
-                            to make a type specimen book.</p>
 
                     </div>
 
                     <div class="col-12 col-md-5 col-lg-5">
-                        <img class="img-fluid" src="./assets/img/aboutside1.png" alt>
+                        <img class="img-fluid" src="./assets/img/1.jpg" alt="side img" loading="lazy">
                     </div>
                 </div>
 
@@ -151,61 +255,34 @@
 
         </section>
 
-        <section class="mission-sec py-3">
+        <section class="mission-sec my-3">
             <div class="container">
                 <div class="col-12">
-                    <h1 class="color mx-auto text-center border-head mb-3">Mission
-                        & Vision</h1>
+                    <h2 class="color mx-auto text-center border-head my-3 p-0">Mission
+                        & Vision</h2>
                 </div>
-                <div class="vision-sec">
 
-                    <div class="row ali justify-content-between">
-                        <div class="col-12 col-md-7 col-lg-6">
-                            <h2 class="color">Our-Mission</h2>
-                            <p>Lorem Ipsum is simply dummy text of the
-                                printing and typesetting industry. Lorem
-                                Ipsum
-                                has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled
-                                it to make a type specimen book. It has
-                                survived not only five centuries, but also
-                                the leap into electronic typesetting,
-                                remaining essentially unchanged. It was
-                                popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum
-                                passages, and more recently with desktop
-                                publishing software like Aldus PageMaker
-                                including versions of Lorem Ipsum </p>
-                        </div>
-                        <div class="col-12 col-md-5 col-lg-5">
-                            <img class="img-fluid" src="./assets/img/aboutside1.png" alt>
-                        </div>
+                <div class="row ali justify-content-between ">
+                    <div class="col-12 col-md-5 col-lg-5">
+                        <img class="img-fluid" src="./assets/img/OurMission.jpg" alt="side img">
                     </div>
+                    <div class="col-12 col-md-7 col-lg-6 align-self-center">
+                        <h2 class="color font-size-24">Our-Mission</h2>
+                        <p class="font-size-17 ">At Motherhood Training Centre, our mission is to nurture excellence in women's healthcare by providing comprehensive, hands-on training programs that empower medical professionals with the knowledge, skills, and expertise to deliver compassionate and cutting-edge care. We strive to bridge the gap between patient needs and the availability of skilled medical practitioners, ensuring every patient receives the highest standard of treatment.</p>
+                    </div>
+
                 </div>
 
-                <div class="sec-vision py-3">
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-5 col-lg-5">
-                            <img class="img-fluid " src="./assets/img/aboutside1.png" alt>
+                <div class="sec-vision my-3">
+                    <div class="row justify-content-between flex-lg-row flex-md-row flex-column-reverse">
+
+                        <div class="col-12 col-md-7 col-lg-6 align-self-center">
+                            <h2 class="color font-size-24">Our-Vision</h2>
+                            <p class="font-size-17">Our vision is to become a globally recognised center of excellence in women's healthcare education, fostering a community of highly trained and dedicated professionals who are at the forefront of advancing Infertility, Laparoscopy, USG  Gynecological, and obstetric practices. We envision a future where our trainees become leaders in their respective fields, pioneering innovative approaches and setting new benchmarks for quality care that positively impacts the lives of patients across the world.
+                            </p>
                         </div>
-                        <div class="col-12 col-md-7 col-lg-6">
-                            <h2 class="color">Our-Vision</h2>
-                            <p>Lorem Ipsum is simply dummy text of the
-                                printing and typesetting industry. Lorem
-                                Ipsum
-                                has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled
-                                it to make a type specimen book. It has
-                                survived not only five centuries, but also
-                                the leap into electronic typesetting,
-                                remaining essentially unchanged. It was
-                                popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum
-                                passages, and more recently with desktop
-                                publishing software like Aldus PageMaker
-                                including versions of Lorem Ipsum </p>
+                        <div class="col-12 col-md-5 col-lg-5">
+                            <img class="img-fluid " src="./assets/img/OurVision.jpg" alt="side img" loading="lazy">
                         </div>
 
                     </div>
@@ -214,181 +291,199 @@
 
         </section>
 
-        <section class="choose-us py-3">
+        <section class="choose-us my-3">
             <div class="container">
                 <div class="col-12">
-                    <h1 class="text-center color mx-auto border-head mb-lg-3">Why
-                        Choose Us</h1>
+                    <h2 class="text-center color mx-auto border-head font-size-25 my-3 p-0">Why Choose Us</h2>
                 </div>
 
                 <div class="row ali justify">
-                    <div class="col-12 col-md-4 col-lg-4 my-lg-0 my-md-0 my-2 text-center">
+                    <div class="col-12 col-md-4 col-lg-3 my-lg-0 my-md-0 my-2 text-center">
                         <div class="box_img">
-                            <img src="./assets/img/us3.png" alt>
+                            <img src="./assets/img/fogsi.png" alt="FOGSI certified courses img" loading="lazy">
                         </div>
-                        <p>
-                            State of the Art IVF facility with embryology
-                            lab & andrology lab
-                        </p>
+                        <p class="font-size-17 my-2">FOGSI certified courses</p>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-4 my-lg-0 my-md-0 my-2 text-center">
+                    <div class="col-12 col-md-4 col-lg-3 my-lg-0 my-md-0 my-2 text-center">
                         <div class="box_img">
-                            <img src="./assets/img/us3.png" alt>
+                            <img src="./assets/img/Untitled-1.png" alt="Customized courses with Hands-on Training img"
+                                loading="lazy">
                         </div>
-                        <p>
-                            750 successful cases in Test Tube Baby treatment
-                            for childless couples
-                        </p>
+                        <p class="font-size-17 my-2">Customized courses with Hands-on Training</p>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-4 my-lg-0 my-md-0 my-2 text-center">
+                    <div class="col-12 col-md-4 col-lg-3 my-lg-0 my-md-0 my-2 text-center">
                         <div class="box_img">
-                            <img src="./assets/img/us3.png" alt>
+                            <img src="./assets/img/Practical-exposure-using-the-latest-equipment.png"
+                                alt="Practical exposure using the latest equipment img" loading="lazy">
                         </div>
-                        <p>
-                            Advanced 3D/4D Sonography GE Voluson series
-                            ultrasound
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-4 my-lg-0 my-md-0 my-2 text-center">
-                        <div class="box_img">
-                            <img src="./assets/img/us3.png" alt>
-                        </div>
-                        <p>
-                            Exclusive 3D laparoscopy set up, fetal medicine
-                            &fetal echo department
-                        </p>
+                        <p class="font-size-17 my-2">Practical exposure using the latest equipment</p>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-4 my-lg-0 my-md-0 my-2 text-center">
+                </div>
+                <div class="row ali justify-content-around">
+                    <div class="col-12 col-md-4 col-lg-3 my-lg-0 my-md-0 my-2 text-center">
                         <div class="box_img">
-                            <img src="./assets/img/us3.png" alt>
+                            <img src="./assets/img/Training-under-industry-leaders-with-decades-of-experience.png"
+                                alt="Training under industry leaders with decades of experience img" loading="lazy">
                         </div>
-                        <p>
-                            NICU/PICU with 12 beds & Ventilator
-                        </p>
+                        <p class="font-size-17 my-2">Training under industry leaders with decades of experience</p>
                     </div>
 
-                    <div class="col-12 col-md-4 col-lg-4 my-lg-0 my-md-0 my-2 text-center">
+                    <div class="col-12 col-md-4 col-lg-3 my-lg-0 my-md-0 my-2 text-center">
                         <div class="box_img">
-                            <img src="./assets/img/us3.png" alt>
+                            <img src="./assets/img/Exposure-to-attending-camps,-events,-and-knowledge-gathering-sessions-with-Industry-experts.png"
+                                alt="Exposure to attending camps, events and knowledge-gathering sessions with Industry experts img"
+                                loading="lazy">
                         </div>
-                        <p>
-                            24*7 Pathology Laboratory & Pharmacy facilities
-                        </p>
+                        <p class="font-size-17 my-2">Exposure to attending camps, events and knowledge-gathering
+                            sessions with Industry experts</p>
                     </div>
+
+                    <!-- <div class="col-12 col-md-4 col-lg-3 my-lg-0 my-md-0 my-2 text-center">
+                        <div class="box_img">
+                            <img src="./assets/img/about24.png"
+                                alt="24*7 Pathology Laboratory & Pharmacy facilities img" loading="lazy">
+                        </div>
+                        <p class="font-size-17 my-2">24*7 Pathology Laboratory & Pharmacy facilities</p>
+                    </div> -->
                 </div>
             </div>
             </div>
 
         </section>
 
-        <section class="our-export-main py-3">
+        <section class="our-export-main my-3">
             <div class="container">
-                <div class="col-12">
-                    <h1 class="text-center color border-head fw-bold mx-auto mb-3">Our
-                        Expert Trainers</h1>
-                    <p>Our expert faculty have put together their many years of
+                <div class="col-10 mx-auto">
+                    <h2 class="text-center color border-head  mx-auto my-3 p-0 font-size-25">Our
+                        Expert Trainers</h2>
+                    <p class="font-size-17">Our expert faculty have put together their many years of
                         medical work and teaching experience
                         into the courses of Gynecology Academy through their
                         lectures. ‘Click’ on any faculty to know
                         more about them. </p>
                 </div>
-                
-                <div class="row justify-content-evenly g-3">
-                    <div class="row justify-content-between g-3">
-                        <!-- Slide 1 -->
-                        <div class="card  col-12 col-md-3 col-lg-3">
-                            <div class="image-content">
-                                <span class="overlay"></span>
-                                <div class="card-image img-hover-zoom">
-                                    <img src="./assets/img/Dr.AnandTrial.jpg" alt class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h2 class="name color text-center mx-auto fw-bold text-uppercase">DR.
-                                    ANAND patel</h2>
-                                <p class="description mx-auto text-center">Senior
-                                    Consultant Gynecologist, Laparoscopic
-                                    Surgeon & IVF Specialist</p>
-                                <button class="button">View Profile</button>
-                            </div>
-                        </div>
 
-                        <!-- Slide 2 -->
-                        <div class="card col-12 col-md-3 col-lg-3">
-                            <div class="image-content">
-                                <span class="overlay"></span>
-                                <div class="card-image img-hover-zoom">
-                                    <img   src="./assets/img/DrRajeshPunjabifinal.jpg" alt class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h2 class="name color text-center mx-auto fw-bold text-uppercase">DR.
-                                    RAJESH PUNJABI</h2>
-                                <p class="description mx-auto text-center">Senior
-                                    Consultant Gynecologist, Laparoscopic
-                                    Surgeon & IVF Specialist</p>
-                                <button class="button" ><a href="Dr.rajesh punjabi.html" class="text-white text-decoration-none">View Profile</a></button>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="card col-12 col-md-3 col-lg-3">
-                            <div class="image-content">
-                                <span class="overlay"></span>
-                                <div class="card-image img-hover-zoom">
-                                    <img src="./assets/img/Dr. Shital Punjabi.jpg" alt class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h2 class="name color text-center mx-auto fw-bold text-uppercase">DR.
-                                    SHITAL PUNJABI</h2>
-                                <p class="description mx-auto text-center">Consultant
-                                    Gynecologist & <br> IVF Specialist</p>
-                                <button class="button">View Profile</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="card mt-lg-4 col-12 col-md-3 col-lg-3">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image img-hover-zoom">
-                                <img src="./assets/img/Dr. Prerna.jpg" alt class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name color text-center mx-auto fw-bold text-uppercase">DR.
-                                PRERANA SHAH</h2>
-                            <p class="description mx-auto text-center">Senior
-                                Consultant Gynecologist & IVF
-                                Specialist.</p>
-                            <button class="button">View Profile</button>
-                        </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="card mt-lg-4  col-12 col-md-3 col-lg-3 ">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image img-hover-zoom">
-                                <img src="./assets/img/medam-3.webp" alt class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name color text-center mx-auto fw-bold text-uppercase">DR.
-                                RIPAL GEVARIYA PARIKH</h2>
-                            <p class="description mx-auto text-center">Consultant
-                                Fetal Medicine <br> Specialist</p>
-                            <button class="button">View Profile</button>
-                        </div>
-                    </div>
-                    <!-- Slide 6 -->
 
+            </div>
+
+            
+            <div class="swiper-container overflow-hidden position-relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <a href="./DrProfile/Dr-Anandpatel.html" class="text-decoration-none">
+                            <div class="card-image mx-auto">
+                                
+                                    <img src="./assets/img/Dr.AnandPatel.jpg" alt="Dr. Anand Patel" class="card-img">
+                                
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name color text-center mx-auto fw-bold text-uppercase font-size-24">DR.
+                                    ANAND PATEL</h2>
+                                <p class="description mx-auto text-center font-size-17">senior consultant gynecologist , Fertility specialist  and advanced Gynec laparoscopic surgeon
+                                </p>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <a href="./DrProfile/Dr-rajesh-punjabi.html" class="text-decoration-none">
+                                <div class="card-image mx-auto">
+                                    
+                                        <img src="./assets/img/Dr.RajesGevariya.jpg" alt="Dr. Rajesh Punjabi"
+                                            class="card-img " loading="lazy">
+                                    
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name color text-center mx-auto fw-bold text-uppercase font-size-24">DR.
+                                        RAJESH PUNJABI
+                                    </h2>
+                                    <p class="description mx-auto text-center font-size-17">Senior consultant Gynecologist and obstetrician, laparoscopic surgeon and IVF specialist</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <a href="./DrProfile/Dr-ShitalPunjabi.html" class="text-decoration-none">
+                            <div class="card-image mx-auto">
+                              
+                                    <img src="./assets/img/Dr.ShitalPanjabi.jpg" alt="Dr. Shital Punjabi"
+                                        class="card-img" loading="lazy">
+                              
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name color text-center mx-auto fw-bold text-uppercase font-size-24">DR.
+                                    SHITAL PUNJABI
+                                </h2>
+                                <p class="description mx-auto text-center font-size-17">Senior IVF specialist ,
+                                    Senior Gynecologist</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <a href="./DrProfile/Dr-PreranaShah.html" class="text-decoration-none">
+                            <div class="card-image mx-auto">
+                               
+                                    <img src="./assets/img/Dr.PreranaShah.jpg" alt="Dr. Prerna Shah" class="card-img"
+                                        loading="lazy">
+                                
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name color text-center mx-auto fw-bold text-uppercase font-size-24">DR.
+                                    PRERANA SHAH</h2>
+                                <p class="description mx-auto text-center font-size-17">Senior consultant Gynecologist and obstetrician and infertility and IVF specialist</p>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <a href="./DrProfile/Dr-Ripal.html" class="text-decoration-none">
+                            <div class="card-image mx-auto">
+                                
+                                    <img src="./assets/img/Dr.RipalPatel.jpg" alt="Dr. Ripal Gevariya Parikh"
+                                        class="card-img" loading="lazy">
+                                
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name color text-center mx-auto fw-bold text-uppercase font-size-24">DR.
+                                    RIPAL GEVARIYA
+                                    PARIKH</h2>
+                                <p class="description mx-auto text-center font-size-17"> Fetal medicine consultant</p>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <a href="./DrProfile/Dr-YuvrajSinhThakore.html" class="text-decoration-none">
+                            <div class="card-image mx-auto">
+                                
+                                    <img src="./assets/img/Dr.YuvrajSinhThakor.jpg" alt="Mr. Yuvraj Sinh Thakore"
+                                        class="card-img" loading="lazy">
+                                
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name color text-center mx-auto fw-bold text-uppercase font-size-24">MR.
+                                    YUVRAJ SINH Thakor
+                                </h2>
+                                <p class="description mx-auto text-center font-size-17">Chief embryologist</p>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination position-absolute"></div>
+            </div>
             </div>
         </section>
-
         <footer class="Foot_bg back-color py-4">
             <div class="container">
                 <div class="row justify">
@@ -397,16 +492,13 @@
                             <!-- <h4>Title Here</h4> -->
                             <div class="logo">
 
-                                <ul
-                                    class="p-0 text-lg-start text-md-start text-center mx-auto mx-lg-0 mx-md-0">
-                                    <li> <img src="./assets/img/MTC.svg"
-                                            alt></li>
+                                <ul class="p-0 text-start text-md-start mx-auto mx-lg-0 mx-md-0">
+                                    <li> <img src="./assets/img/MTC.svg" alt></li>
 
                                 </ul>
 
                             </div>
-                            <p
-                                class="font-size-1rem text-lg-start text-md-start color text-center">Motherhood
+                            <p class="font-size-1rem text-lg-start text-md-start color text-start">Motherhood
                                 Training Center - A
                                 subsidiary of Motherhood
                                 Women’s &amp; Child Care Hospital, offers
@@ -419,117 +511,92 @@
                                 Infertility, Sonography, Laparoscopy and
                                 Embryology.
                             </p>
-                            <ul class="text-md-start text-lg-start text-center">
-                                <li><a
-                                        class="facebook rounded-1 text-md-start text-lg-start text-center"
+                            <ul class="text-md-start text-lg-start text-start p-0">
+                                <li><a class="facebook rounded-1 text-md-start text-lg-start text-center"
                                         href="https://www.instagram.com/motherhoodtrainingcenter/"><i
                                             class="fa-brands fa-instagram  text-white  font-size-2rem"></i></a></li>
 
-                                <li><a
-                                        class="facebook rounded-1 text-md-start text-lg-start text-center"
+                                <li><a class="facebook rounded-1 text-md-start text-lg-start text-center"
                                         href="https://www.facebook.com/motherhoodtrainingcenter"><i
                                             class="fa-brands fa-facebook  text-white font-size-2rem"></i></a>
                                 </li>
-                                <li><a
-                                        class="facebook rounded-1 text-md-start text-lg-start text-center"
+                                <li><a class="facebook rounded-1 text-md-start text-lg-start text-center"
                                         href="https://www.linkedin.com/company/motherhood-training-center/"><i
                                             class="fa-brands fa-linkedin-in  text-white font-size-2rem"></i></a></li>
-                                <li><a
-                                        class="facebook rounded-1 text-md-start text-lg-start text-center"
-                                        href="#"><i
-                                            class="fa-brands fa-whatsapp  text-white font-size-2rem"></i></a></li>
+                                            <li><a class="facebook rounded-1 text-md-start text-lg-start text-center" href="https://www.youtube.com/@motherhoodtrainingcenter"><i
+                                                class="fa-brands fa-youtube  text-white font-size-2rem"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-8 align-self-center">
+                    <div class="col-12 col-md-8 col-lg-8 align-self-end">
                         <div class="Foter_last">
                             <div class="row justify">
                                 <div class="col-12 col-md-3 col-lg-3">
                                     <div class="footer_txt">
-                                        <h4
-                                            class="text-md-start fw-bold text-lg-start text-center color-1">Our
+                                        <h4 class="text-md-start fw-bold text-lg-start text-start color-1">Our
                                             Training</h4>
-                                        <h6
-                                            class="text-md-start fw-bold text-lg-start color text-center">FOGSI
+                                        <h6 class="text-md-start fw-bold text-lg-start color text-start">FOGSI
                                             Recognized Courses</h6>
-                                        <a
-                                            class="d-block p-2 fs-6 text-md-start text-lg-start text-center color"
-                                            href="#">Advanced
+                                        <a class="d-block p-2 fs-6 text-md-start text-lg-start text-start color"
+                                            href="./Course/FOGSI-certifiedInfertilityCoursebyMTC.html">Advanced
                                             Infertility</a>
-                                        <a
-                                            class="d-block p-2 fs-6 text-md-start text-lg-start text-center color"
-                                            href="#">Advanced
+                                        <a class="d-block p-2 fs-6 text-md-start text-lg-start text-start color"
+                                            href="./Course/FOGSI-certifiedSonographyCoursebyMTC.html">Advanced
                                             Sonography</a>
-                                        <a
-                                            class="d-block p-2 fs-6 text-md-start text-lg-start text-center color"
-                                            href="#">Advanced
+                                        <a class="d-block p-2 fs-6 text-md-start text-lg-start text-start color"
+                                            href="./Course/FOGSI-certifiedLaparoscopyCoursebyMTC.html">Advanced
                                             Laparoscopy</a>
                                     </div>
                                 </div>
 
-                                <div
-                                    class="col-12 d-flex align-self-end col-md-4  col-lg-6">
-                                    <div class="footer_txt-2 col-6 ">
+                                <div class="col-12  d-lg-flex d-md-flex  align-self-end col-md-4 text-center col-lg-6">
+                                    <div class="footer_txt-2 col-lg-6 col-md-6 col-12 text-center ">
                                         <!-- <h2></h2> -->
-                                        <h6
-                                            class="color fw-bold text-md-start text-lg-start text-center">Fellowship
+                                        <h6 class="color fw-bold text-md-start text-lg-start text-start">Fellowship
                                             / Hands-on Training
                                             Courses</h6>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
-                                            href="#">Advanced
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                            href="./Course/LearnwiththeLatestEquipmenti0nouradvancedIVFLabbyMTC.html">Advanced
                                             Infertility</a>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
-                                            href="#">Advanced
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                            href="./Course/FellowshipAdvancedsonography.html">Advanced
                                             Sonography</a>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
-                                            href="#">Advanced
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                            href="./Course/Fellowship(Basic)-3Months-Observe&Perform.html">Advanced
                                             Laparoscopy</a>
                                     </div>
-                                    <div class="footer_txt-2 col-6 ">
+                                    <div class="footer_txt-2 col-lg-6 col-md-6 col-12 ">
                                         <!-- <h2></h2> -->
-                                        <h6
-                                            class="color fw-bold text-md-start text-lg-start text-start">Certified
+                                        <h6 class="color fw-bold text-md-start text-lg-start text-start">Certified
                                             Clinical ART &amp; Embryology
                                             Course</h6>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
                                             href="#">observationship</a>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
-                                            href="#">Fellowship (Basic)</a>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
-                                            href="#">Fellowship (Advanced)</a>
-                                        <a
-                                            class="d-block fs-6 p-2 text-md-start text-lg-start text-center color"
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                            href="#">Fellowship
+                                            (Basic)</a>
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
+                                            href="#l">Fellowship
+                                            (Advanced)</a>
+                                        <a class="d-block fs-6 p-2 text-md-start text-lg-start text-start color"
                                             href="#">Embryo Biopsy or PGT</a>
 
                                     </div>
                                 </div>
                                 <div class="col-12  col-md-3 col-lg-3">
                                     <div class="footer_txt-1 ">
-                                        <h4
-                                            class="text-md-start fw-bold text-lg-start text-center color-1">Quick
+                                        <h4 class="text-md-start fw-bold text-lg-start text-start color-1">Quick
                                             Links</h4>
-                                        <a
-                                            class="d-block  text-under-line text-md-start text-lg-start text-center color fs-6"
-                                            href="#">Home</a>
-                                        <a
-                                            class="d-block  text-under-line text-md-start text-lg-start text-center color fs-6"
-                                            href="About.html">About Us</a>
-                                        <a
-                                            class="d-block  text-under-line text-md-start text-lg-start text-center color fs-6"
-                                            href="Courses">Courses</a>
-                                        <a
-                                            class="d-block  text-under-line text-md-start text-lg-start text-center color fs-6"
-                                            href="Photo gallary">Photo
-                                            gallary</a>
-                                        <a
-                                            class="d-block  text-under-line text-md-start text-lg-start text-center color fs-6"
-                                            href="Contact us">Contact us</a>
+                                        <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                            href="../index.html">Home</a>
+                                        <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                            href="../About.html">About Us</a>
+                                        <!-- <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                            href="#">Courses</a> -->
+                                        <!-- <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6" href="Photo gallary">Photo
+                                            gallary</a> -->
+                                        <a class="d-block  text-under-line text-md-start text-lg-start text-start color fs-6"
+                                            href="../Contact.html">Contact us</a>
 
                                     </div>
                                 </div>
@@ -546,12 +613,12 @@
         <div class="design-section">
             <div class="container">
                 <div class="row ali justify">
-                    <p class="col-lg-6 col-md-6 col-12 text-center text-md-start text-lg-start">Copyright
+                    <p class="col-lg-6 col-md-6 col-12 text-center text-md-start text-lg-start m-0">Copyright
                         2024. All Rights Reserved
                         <span>Motherhood Training
                             Center</span>
                     </p>
-                    <p class="col-lg-6 col-md-6 col-12 text-center text-md-end text-lg-end">Designed
+                    <p class="col-lg-6 col-md-6 col-12 text-center text-md-end text-lg-end m-0">Designed
                         and Devloped By <span><a href="https://fleek.media/">fleek.media</a></span></p>
                 </div>
             </div>

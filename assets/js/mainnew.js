@@ -1,19 +1,63 @@
+// header
+$(document).ready(function () {
+  // Toggle mobile menu
+  $('#menu').click(function (e) {
+      e.preventDefault();
+      var mobileMenu = $(this).next();
+      if (mobileMenu.is(":visible")) {
+          mobileMenu.slideUp(200);
+          $(this).removeClass('activeMenu');
+      } else {
+          mobileMenu.slideDown(200);
+          $(this).addClass('activeMenu');
+      }
+  });
+
+  // Handle window resize
+  $(window).resize(function () {
+      var screenWidth = $(window).width();
+      if (screenWidth > 767) {
+          $("nav > ul.et-mobile-menu:visible").hide();
+      }
+  });
+
+  // Toggle dropdown menu
+  $('.nav-item.setActive').click(function () {
+      $(this).find('.dropdown-menu').slideToggle(200);
+      $(this).toggleClass('active');
+  });
+});
+
+
+document.getElementById('parentCat_1').addEventListener('click', function() {
+  var dropdownMenu = document.getElementById('1');
+  dropdownMenu.classList.toggle('show');
+});
+// header
+
+
+
+
+
+
+
 AOS.init();
 
 
 // read more
 function toggleContent() {
-    var moreContent = document.getElementById("more-content");
-    var btnText = document.getElementById("read-more-btn");
+  var content = document.getElementById("more-content");
+  var btn = document.getElementById("read-more-btn");
   
-    if (moreContent.style.display === "none") {
-        moreContent.style.display = "block";
-        btnText.innerHTML = "Read Less";
-    } else {
-        moreContent.style.display = "none";
-        btnText.innerHTML = "Read More";
-    }
+  if (content.style.display === "none") {
+      content.style.display = "block";
+      btn.textContent = "Read Less";
+  } else {
+      content.style.display = "none";
+      btn.textContent = "Read More";
   }
+}
+
   
   // read more
 
@@ -52,14 +96,12 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 4,           // Default: Show 4 slides at a time
         slidesToScroll: 1,          // Default: Scroll 1 slide at a time
         spaceBetween: 5,            // Space between slides
+        dots: true,
         autoplay: {
             delay: 5000,            // Delay between slides in ms
             disableOnInteraction: false, // Continue autoplay after user interactions
         },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        
         breakpoints: {
             320: {
                 slidesPerView: 1,
@@ -88,7 +130,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // profile
 
-
+// logos slider
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.logos-swiper-container', {
+      loop: true,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+      },
+      lazy: {
+          loadPrevNext: true,
+      },
+      breakpoints: {
+          // When window width is >= 320px
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+          },
+          // When window width is >= 480px
+          480: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+          // When window width is >= 640px
+          640: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+          },
+          // When window width is >= 1024px
+          1024: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+          },
+      },
+  });
+});
+// logos slider
 
 
 //   Our Trained Fellow Doctors
@@ -96,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper('.my-swiper-container', {
       slidesPerView: 4,           // Default: Show 4 slides at a time
       slidesToScroll: 1,          // Default: Scroll 1 slide at a time
-      spaceBetween: 5,            // Space between slides
+      spaceBetween: 10,            // Space between slides
       autoplay: {
         delay: 4000,              // Delay between slides in ms
         disableOnInteraction: false, // Continue autoplay after user interactions
@@ -139,7 +224,48 @@ document.addEventListener('DOMContentLoaded', function() {
 //   Our Trained Fellow Doctors
 
 
-
+// youtube slier
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.custom-swiper-container', {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+          // when window width is >= 320px
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+          },
+          // when window width is >= 640px
+          640: {
+              slidesPerView: 2,
+              spaceBetween: 30
+          },
+          // when window width is >= 1024px
+          1024: {
+              slidesPerView: 3,
+              spaceBetween: 40
+          },
+          // when window width is >= 1440px
+          1440: {
+              slidesPerView: 4,
+              spaceBetween: 50
+          }
+      }
+  });
+});
+// youtube slier
 
 // course slider 
 
